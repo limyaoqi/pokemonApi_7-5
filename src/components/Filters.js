@@ -14,8 +14,8 @@ function Filters(props) {
       {/* INSTRUCTION: Add a select field for filtering by type */}
       <select onChange={(e) => onTypeChange(e.target.value)} value={type}>
         <option value={"all"}>All types</option>
-        {types.map((t,index) => (
-          <option key={index} value={t}>{t}</option>
+        {types.map((t) => (
+          <option key={t} value={t}>{t}</option>
         ))}
       </select>
     </div>
